@@ -7,9 +7,9 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-    app_name_login : http://cas_server.local:8080/login
-    app_name_logout : http://cas_server.local:8080/logout
-    app_name_login_check : http://cas_server.local:8080/login_check
+    app_name_login : https://localhost:8080/login
+    app_name_logout : https://localhost:8080/logout
+    app_name_login_check : https://localhost:8080/login_check
 
 framework:
     #esi:             ~
