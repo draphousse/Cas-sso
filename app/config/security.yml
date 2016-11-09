@@ -1,0 +1,18 @@
+security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface: sha512
+
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+    firewalls:
+        my_firewall:
+            pattern: ^/
+            trusted_sso:
+                manager: admin_sso
+                create_users: false
+                login_action: false
+                logout_action: false
+                login_path: /login
+                check_path: /login_check
+            provider: fos_userbundle
